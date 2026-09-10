@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Florence Boutique Hotel — Booking Calendar</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div><h1>Florence Boutique Hotel</h1><p>Party & Room Booking Calendar</p></div><div class="headActions"><button id="addPartyBtn">＋ Party Booking</button><button id="addRoomBtn" class="dark">＋ Room Booking</button></div></header>
+<nav class="tabs"><button class="tab active" data-mode="party">🎉 Party Calendar</button><button class="tab" data-mode="rooms">🛏️ Room Calendar</button></nav>
+<section class="toolbar"><button id="prev">‹</button><h2 id="monthTitle"></h2><button id="next">›</button><button id="today">Today</button><input id="search" placeholder="Search guest / phone / room..."><select id="filter"><option value="all">All Status</option><option value="confirmed">Confirmed</option><option value="hold">Hold</option><option value="enquiry">Enquiry</option><option value="cancelled">Cancelled</option></select></section>
+<section class="stats"><div class="s confirmed"><b id="confirmedCount">0</b><span>Confirmed</span></div><div class="s hold"><b id="holdCount">0</b><span>Hold</span></div><div class="s enquiry"><b id="enquiryCount">0</b><span>Enquiry</span></div><div class="s cancelled"><b id="cancelledCount">0</b><span>Cancelled</span></div><div class="s rooms"><b id="occupancyCount">0/16</b><span>Room Bookings</span></div></section>
+<div id="roomLegend" class="legend hidden"><span>Suites: 102, 103, 106, 202, 203, 206 (6)</span><span>Premium: 101, 107, 108, 201, 207, 208 (6)</span><span>Superior: 104, 105, 204, 205 (4)</span></div>
+<main id="calendar"></main>
+<div id="modal" class="modal hidden"><div class="dialog"><div class="dialogHead"><h3 id="modalTitle">Add Party Booking</h3><button id="close">×</button></div><form id="form"></form></div></div>
+<script src="app.js"></script></body></html>
